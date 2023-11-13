@@ -18,4 +18,7 @@
     <!-- TRENDING COLLECTION -->
     <string name="trending_collection_title">Trending Collection</string>
     <string name="trending_collection_description">Checkout our weekly updated trending collection.</string>
+    <string name="trending_collection_count">125+</string>
+    <string name="trending_collection_name">DSGN Animals</string>
+    <string name="trending_collection_author_name">MrFox</string>
 </resources>

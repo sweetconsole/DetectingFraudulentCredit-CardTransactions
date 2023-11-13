@@ -353,7 +353,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/trendingCollectionTitle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView"
+                android:id="@+id/trendingCollectionImageOne"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="25dp"
@@ -363,8 +363,103 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/trendingCollectionDescription"
-                app:srcCompat="@drawable/trending_collection_one"
-                app:shapeAppearanceOverlay="@style/corners_rounded_20dp"/>
+                app:shapeAppearanceOverlay="@style/corners_rounded_20dp"
+                app:srcCompat="@drawable/trending_collection_one" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionImageOne">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/trendingCollectionImageTwo"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    app:shapeAppearanceOverlay="@style/corners_rounded_20dp"
+                    app:srcCompat="@drawable/trending_collection_two" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/trendingCollectionImageThree"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:shapeAppearanceOverlay="@style/corners_rounded_20dp"
+                    app:srcCompat="@drawable/trending_collection_three" />
+
+                <Button
+                    android:id="@+id/trendingCollectionButton"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/space_mono_bold"
+                    android:text="@string/trending_collection_count"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/trendingCollectionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/work_sans_semi_bold"
+                android:text="@string/trending_collection_name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionName">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/trendingCollectionAuthorAvatar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/corners_rounded_12dp"
+                    app:srcCompat="@drawable/van_gogh_avatar" />
+
+                <TextView
+                    android:id="@+id/trendingCollectionAuthorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/trending_collection_author_name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/work_sans_regular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/trendingCollectionAuthorAvatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
