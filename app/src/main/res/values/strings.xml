@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NFT Marketplace</string>
+    <string name="error_load_image">error load image</string>
+
+        <!-- INTRO -->
+    <string name="intro_title"><![CDATA[Discover digital art & Collect NFTs]]></string>
+    <string name="intro_description">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</string>
+    <string name="intro_button">Get Started</string>
+    <string name="intro_name">Space Walking</string>
+    <string name="intro_author">Van Gogh</string>
+    <string name="intro_total_sale_value">240k+</string>
+    <string name="intro_total_sale_title">Total sale</string>
+    <string name="intro_auctions_value">100k+</string>
+    <string name="intro_auctions_title">Auctions</string>
+    <string name="intro_authors_value">170k+</string>
+    <string name="intro_authors_title">Authors</string>
+
+    <!-- TRENDING COLLECTION -->
+    <string name="trending_collection_title">Trending Collection</string>
+    <string name="trending_collection_description">Checkout our weekly updated trending collection.</string>
+</resources>
