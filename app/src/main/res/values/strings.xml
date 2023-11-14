@@ -3,17 +3,17 @@
     <string name="error_load_image">error load image</string>
 
         <!-- INTRO -->
-    <string name="intro_title"><![CDATA[Discover digital art & Collect NFTs]]></string>
-    <string name="intro_description">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</string>
-    <string name="intro_button">Get Started</string>
+    <string name="intro_title">Откройте для себя Цифровое Искусство и  коллекционируйте NFT</string>
+    <string name="intro_description">Собирайте, покупайте и продавайте произведения искусства более чем 20 тысяч художников NFT.</string>
+    <string name="intro_button">Начать</string>
     <string name="intro_name">Space Walking</string>
-    <string name="intro_author">Van Gogh</string>
+    <string name="intro_author">Винсент Ван Гог</string>
     <string name="intro_total_sale_value">240k+</string>
-    <string name="intro_total_sale_title">Total sale</string>
+    <string name="intro_total_sale_title">Продаж</string>
     <string name="intro_auctions_value">100k+</string>
-    <string name="intro_auctions_title">Auctions</string>
+    <string name="intro_auctions_title">Аукционов</string>
     <string name="intro_authors_value">170k+</string>
-    <string name="intro_authors_title">Authors</string>
+    <string name="intro_authors_title">Авторов</string>
 
     <!-- TRENDING COLLECTION -->
     <string name="trending_collection_title">Trending Collection</string>
@@ -21,4 +21,14 @@
     <string name="trending_collection_count">125+</string>
     <string name="trending_collection_name">DSGN Animals</string>
     <string name="trending_collection_author_name">MrFox</string>
+
+    <!-- TOP CREATORS -->
+    <string name="top_creators_title">Top Creators</string>
+    <string name="top_creators_description">Checkout Top Rated Creators on the NFT Marketplace.</string>
+    <string name="view_rankings_button_text">View Rankings</string>
+
+    <!-- TOP CREATORS ITEM -->
+    <string name="top_creators_item_authors_name">Keepitreal</string>
+    <string name="top_creators_item_total_sales_title">Total Sales:</string>
+    <string name="top_creators_item_total_sales_value">34.53 ETH</string>
 </resources>
