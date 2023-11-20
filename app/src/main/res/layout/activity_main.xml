@@ -35,8 +35,8 @@
 
             <ImageButton
                 android:id="@+id/buttonMenu"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_marginEnd="16dp"
                 android:background="#00FFFFFF"
                 android:contentDescription="@string/error_load_image"
@@ -53,7 +53,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="54dp"
         android:fillViewport="true"
+        android:background="@color/dark_grey"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
@@ -94,7 +96,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/introTitle" />
 
 
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/introBlock"
                 android:layout_width="match_parent"
@@ -104,17 +105,24 @@
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/layout_bg"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/introDescription">
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageView
                     android:id="@+id/nftImage"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
                     android:src="@drawable/intro_image"
-                    app:shapeAppearanceOverlay="@style/corners_rounded_top" />
+                    android:background="@drawable/corners_rounded_top"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/corners_rounded_top"
+                    android:contentDescription="@string/error_load_image" />
 
                 <TextView
                     android:id="@+id/nftName"
@@ -159,12 +167,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
+                        android:layout_marginBottom="3dp"
                         android:background="@color/grey"
                         android:fontFamily="@font/work_sans_regular"
                         android:text="@string/intro_author"
                         android:textColor="@color/white"
                         android:textSize="16sp"
-                        app:layout_constraintStart_toEndOf="@+id/nftAuthorAvatar" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nftAuthorAvatar"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -176,8 +187,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
                 android:background="@drawable/background_button"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/introBlock">
@@ -186,24 +197,24 @@
                     android:id="@+id/getStartedButtonImage"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rocket_icon_white"
                     android:background="@color/violet"
+                    android:contentDescription="@string/error_load_image"
+                    android:src="@drawable/rocket_icon_white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:contentDescription="@string/error_load_image" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/getStartedButtonText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
+                    android:background="@color/violet"
                     android:fontFamily="@font/work_sans_semi_bold"
                     android:text="@string/intro_button"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:background="@color/violet"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -470,10 +481,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
+                android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/top_creators_title"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/work_sans_semi_bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
@@ -502,7 +513,7 @@
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/topCreatorsDescription"/>
+                app:layout_constraintTop_toBottomOf="@+id/topCreatorsDescription" />
 
             <LinearLayout
                 android:id="@+id/viewRankingsButton"
@@ -511,8 +522,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
                 android:background="@drawable/border_button"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/topCreatorsItems">
@@ -521,13 +532,12 @@
                     android:id="@+id/viewRankingsImage"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rokcet_icon_violet"
-                    android:background="@color/dark_grey"
+                    android:contentDescription="@string/error_load_image"
+                    android:src="@drawable/rocket_icon_violet"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:contentDescription="@string/error_load_image" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/viewRankingsButtonText"
@@ -538,7 +548,6 @@
                     android:text="@string/view_rankings_button_text"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:background="@color/dark_grey"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -566,9 +575,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:numColumns="2"
                 android:orientation="vertical"
                 android:verticalSpacing="20dp"
-                android:numColumns="2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -580,10 +589,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
+                android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/discover_more_nft_title"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                android:fontFamily="@font/work_sans_semi_bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/categoriesItems" />
@@ -595,10 +604,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
+                android:fontFamily="@font/work_sans_regular"
                 android:text="@string/discover_more_nft_description"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:fontFamily="@font/work_sans_regular"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/discoverMoreNFTTitle" />
@@ -621,8 +630,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
                 android:background="@drawable/border_button"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/discoverMoreNFTItems">
@@ -631,13 +640,12 @@
                     android:id="@+id/discoverMoreNFTButtonImage"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/error_load_image"
                     android:src="@drawable/eye_icon_violet"
-                    android:background="@color/dark_grey"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:contentDescription="@string/error_load_image" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/discoverMoreNFTButtonText"
@@ -648,7 +656,6 @@
                     android:text="@string/discover_more_nft_button_text"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:background="@color/dark_grey"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/discoverMoreNFTButtonImage"

@@ -7,14 +7,15 @@
     android:background="@drawable/layout_bg"
     android:padding="20dp">
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageView
         android:id="@+id/topCreatorsItemAuthorAvatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:src="@drawable/van_gogh_avatar"
+        android:background="@drawable/corners_rounded_30dp"
+        android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/corners_rounded_30dp"
-        app:srcCompat="@drawable/van_gogh_avatar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/topCreatorsItemAuthorName"
