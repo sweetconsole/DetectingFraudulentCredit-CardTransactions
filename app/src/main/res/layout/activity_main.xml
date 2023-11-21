@@ -103,7 +103,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:background="@drawable/layout_bg"
+                android:background="@drawable/block_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -197,7 +197,6 @@
                     android:id="@+id/getStartedButtonImage"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="@color/violet"
                     android:contentDescription="@string/error_load_image"
                     android:src="@drawable/rocket_icon_white"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -210,7 +209,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:background="@color/violet"
                     android:fontFamily="@font/work_sans_semi_bold"
                     android:text="@string/intro_button"
                     android:textColor="@color/white"
@@ -340,10 +338,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
-                android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/trending_collection_title"
-                android:textColor="@color/white"
-                android:textSize="28sp"
+                android:theme="@style/block_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/introInfo" />
@@ -417,17 +413,16 @@
                     app:layout_constraintStart_toEndOf="@+id/trendingCollectionImageTwo"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/trendingCollectionButton"
                     android:layout_width="95dp"
                     android:layout_height="95dp"
                     android:layout_gravity="end"
-                    android:layout_weight="0"
-                    android:background="@drawable/background_button"
                     android:fontFamily="@font/space_mono_bold"
                     android:text="@string/trending_collection_count"
                     android:textColor="@color/white"
                     android:textSize="16sp"
+                    android:background="@drawable/background_button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -507,10 +502,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
-                android:fontFamily="@font/work_sans_regular"
                 android:text="@string/top_creators_description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
+                android:theme="@style/block_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/topCreatorsTitle" />
@@ -672,6 +665,91 @@
                     app:layout_constraintStart_toEndOf="@+id/discoverMoreNFTButtonImage"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/hotItWorksTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/how_it_works_title"
+                android:theme="@style/block_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discoverMoreNFTButton" />
+
+            <TextView
+                android:id="@+id/hotItWorksDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/how_it_works_description"
+                android:theme="@style/block_description"
+                app:layout_constraintBottom_toTopOf="@+id/hotItWorksBlockOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotItWorksTitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/hotItWorksBlockOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingVertical="20dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/block_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotItWorksDescription">
+
+                <ImageView
+                    android:id="@+id/hotItWorksBlockOneImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/error_load_image"
+                    android:src="@drawable/how_it_works_image_one"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hotItWorksBlockOneImage"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/hotItWorksBlockOneTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/how_it_works_block_one_title"
+                        android:theme="@style/how_it_works_block_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/hotItWorksBlockOneDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/how_it_works_block_one_description"
+                        android:theme="@style/how_it_works_block_description"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/hotItWorksBlockOneTitle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

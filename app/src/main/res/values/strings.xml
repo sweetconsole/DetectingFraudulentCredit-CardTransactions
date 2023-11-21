@@ -40,4 +40,14 @@
     <string name="discover_more_nft_title">Откройте для себя больше NFT</string>
     <string name="discover_more_nft_description">Исследуйте новые трендовые NFT.</string>
     <string name="discover_more_nft_button_text">Посмотреть</string>
+
+    <!-- HOW IT WORKS -->
+    <string name="how_it_works_title">Как это работает</string>
+    <string name="how_it_works_description">Узнайте, с чего начать.</string>
+    <string name="how_it_works_block_one_title">Заведите свой кошелек</string>
+    <string name="how_it_works_block_one_description">Настройте свой кошелек по выбору. Подключите его к NFT market, нажав на значок кошелька в правом верхнем углу.</string>
+    <string name="how_it_works_block_two_title">Создайте коллекцию</string>
+    <string name="how_it_works_block_two_description">Загрузите свои работы и создайте свою коллекцию. Добавьте описание, ссылки на социальные сети и минимальную цену.</string>
+    <string name="how_it_works_block_three_title">Начните зарабатывать</string>
+    <string name="how_it_works_block_three_description">Выбирайте между аукционами и объявлениями с фиксированной ценой. Начните зарабатывать, продавая свои NFT или торгуя другими.</string>
 </resources>
