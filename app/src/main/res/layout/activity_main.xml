@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -20,7 +22,10 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:background="@color/dark_grey"/>
+                android:background="@color/dark_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/logo"
@@ -54,6 +59,7 @@
         android:layout_marginTop="54dp"
         android:fillViewport="true"
         android:background="@color/dark_grey"
+        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,7 +127,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/corners_rounded_top"
                     android:contentDescription="@string/error_load_image" />
 
                 <TextView
@@ -150,17 +155,19 @@
                     app:layout_constraintStart_toStartOf="@+id/introBlock"
                     app:layout_constraintTop_toBottomOf="@+id/nftName">
 
-                    <com.google.android.material.imageview.ShapeableImageView
+                    <ImageView
                         android:id="@+id/nftAuthorAvatar"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
+                        android:clipToOutline="true"
                         android:src="@drawable/van_gogh_avatar"
+                        android:background="@drawable/corners_rounded_12dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:shapeAppearanceOverlay="@style/corners_rounded_12dp" />
+                        android:contentDescription="@string/error_load_image" />
 
                     <TextView
                         android:id="@+id/nftAuthorName"
@@ -362,17 +369,19 @@
             <ImageView
                 android:id="@+id/trendingCollectionImageOne"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:clipToOutline="true"
                 android:background="@drawable/corners_rounded_20dp"
                 android:src="@drawable/trending_collection_one"
+                android:contentDescription="@string/error_load_image"
+                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionDescription"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout"
@@ -390,11 +399,11 @@
                     android:id="@+id/trendingCollectionImageTwo"
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:adjustViewBounds="true"
                     android:background="@drawable/corners_rounded_20dp"
                     android:clipToOutline="true"
                     android:contentDescription="@string/error_load_image"
                     android:src="@drawable/trending_collection_two"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -403,11 +412,11 @@
                     android:id="@+id/trendingCollectionImageThree"
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:adjustViewBounds="true"
                     android:background="@drawable/corners_rounded_20dp"
                     android:clipToOutline="true"
                     android:contentDescription="@string/error_load_image"
                     android:src="@drawable/trending_collection_three"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/trendingCollectionButton"
                     app:layout_constraintStart_toEndOf="@+id/trendingCollectionImageTwo"
@@ -454,16 +463,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/trendingCollectionName">
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageView
                     android:id="@+id/trendingCollectionAuthorAvatar"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:adjustViewBounds="true"
+                    android:clipToOutline="true"
+                    android:background="@drawable/corners_rounded_12dp"
+                    android:src="@drawable/van_gogh_avatar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/corners_rounded_12dp"
-                    app:srcCompat="@drawable/van_gogh_avatar" />
+                    android:contentDescription="@string/error_load_image" />
 
                 <TextView
                     android:id="@+id/trendingCollectionAuthorName"
@@ -513,7 +523,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -538,6 +548,7 @@
                     android:layout_height="20dp"
                     android:contentDescription="@string/error_load_image"
                     android:src="@drawable/rocket_icon_violet"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

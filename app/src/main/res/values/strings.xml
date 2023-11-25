@@ -2,11 +2,11 @@
     <string name="app_name">NFT Marketplace</string>
     <string name="error_load_image">error load image</string>
 
-        <!-- INTRO -->
+    <!-- INTRO -->
     <string name="intro_title">Откройте для себя Цифровое Искусство и  коллекционируйте NFT</string>
     <string name="intro_description">Собирайте, покупайте и продавайте произведения искусства более чем 20 тысяч художников NFT.</string>
     <string name="intro_button">Начать</string>
-    <string name="intro_name">Space Walking</string>
+    <string name="intro_name">Звёздная ночь</string>
     <string name="intro_author">Винсент Ван Гог</string>
     <string name="intro_total_sale_value">240k+</string>
     <string name="intro_total_sale_title">Продаж</string>
