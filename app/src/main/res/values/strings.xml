@@ -3,51 +3,51 @@
     <string name="error_load_image">error load image</string>
 
     <!-- INTRO -->
-    <string name="intro_title">Откройте для себя Цифровое Искусство и  коллекционируйте NFT</string>
-    <string name="intro_description">Собирайте, покупайте и продавайте произведения искусства более чем 20 тысяч художников NFT.</string>
-    <string name="intro_button">Начать</string>
-    <string name="intro_name">Звёздная ночь</string>
-    <string name="intro_author">Винсент Ван Гог</string>
+    <string name="intro_title">Discover digital art &amp; Collect NFTs</string>
+    <string name="intro_description">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</string>
+    <string name="intro_button">Get Started</string>
+    <string name="intro_name">Space Walking</string>
+    <string name="intro_author">Animakid</string>
     <string name="intro_total_sale_value">240k+</string>
-    <string name="intro_total_sale_title">Продаж</string>
+    <string name="intro_total_sale_title">Total Sale</string>
     <string name="intro_auctions_value">100k+</string>
-    <string name="intro_auctions_title">Аукционов</string>
+    <string name="intro_auctions_title">Auctions</string>
     <string name="intro_authors_value">170k+</string>
-    <string name="intro_authors_title">Авторов</string>
+    <string name="intro_authors_title">Artists</string>
 
     <!-- TRENDING COLLECTION -->
-    <string name="trending_collection_title">Трендовая коллекция</string>
-    <string name="trending_collection_description">Ознакомьтесь с нашей еженедельной обновляемой коллекцией трендов.</string>
+    <string name="trending_collection_title">Trending Collection</string>
+    <string name="trending_collection_description">Checkout our weekly updated trending collection.</string>
     <string name="trending_collection_count">125+</string>
     <string name="trending_collection_name">DSGN Animals</string>
     <string name="trending_collection_author_name">MrFox</string>
 
     <!-- TOP CREATORS -->
-    <string name="top_creators_title">Топ Авторов</string>
-    <string name="top_creators_description">Ознакомьтесь с лучшими создателями на NFT Marketplace.</string>
-    <string name="view_rankings_button_text">Посмотреть рейтинг</string>
+    <string name="top_creators_title">Top creators</string>
+    <string name="top_creators_description">Checkout Top Rated Creators on the NFT Marketplace.</string>
+    <string name="view_rankings_button_text">View Rankings</string>
 
     <!-- TOP CREATORS ITEM -->
     <string name="top_creators_item_authors_name">Keepitreal</string>
-    <string name="top_creators_item_total_sales_title">Всего продаж:</string>
+    <string name="top_creators_item_total_sales_title">Total Sales:</string>
     <string name="top_creators_item_total_sales_value">34.53 ETH</string>
 
     <!-- CATEGORIES  -->
-    <string name="categories_title">Категории</string>
+    <string name="categories_title">Browse Categories</string>
     <string name="category_item_title">Категория</string>
 
     <!-- DISCOVER MORE NFT -->
-    <string name="discover_more_nft_title">Откройте для себя больше NFT</string>
-    <string name="discover_more_nft_description">Исследуйте новые трендовые NFT.</string>
-    <string name="discover_more_nft_button_text">Посмотреть</string>
+    <string name="discover_more_nft_title">Discover More NFTs</string>
+    <string name="discover_more_nft_description">Explore new trending NFTs.</string>
+    <string name="discover_more_nft_button_text">See All</string>
 
     <!-- HOW IT WORKS -->
-    <string name="how_it_works_title">Как это работает</string>
-    <string name="how_it_works_description">Узнайте, с чего начать.</string>
-    <string name="how_it_works_block_one_title">Заведите свой кошелек</string>
-    <string name="how_it_works_block_one_description">Настройте свой кошелек по выбору. Подключите его к NFT market, нажав на значок кошелька в правом верхнем углу.</string>
-    <string name="how_it_works_block_two_title">Создайте коллекцию</string>
-    <string name="how_it_works_block_two_description">Загрузите свои работы и создайте свою коллекцию. Добавьте описание, ссылки на социальные сети и минимальную цену.</string>
-    <string name="how_it_works_block_three_title">Начните зарабатывать</string>
-    <string name="how_it_works_block_three_description">Выбирайте между аукционами и объявлениями с фиксированной ценой. Начните зарабатывать, продавая свои NFT или торгуя другими.</string>
+    <string name="how_it_works_title">How it works</string>
+    <string name="how_it_works_description">Find out how to get started.</string>
+    <string name="how_it_works_block_one_title">Setup Your wallet</string>
+    <string name="how_it_works_block_one_description">Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</string>
+    <string name="how_it_works_block_two_title">Create Collection</string>
+    <string name="how_it_works_block_two_description">Upload your work and setup your collection. Add a description, social links and floor price.</string>
+    <string name="how_it_works_block_three_title">Start Earning</string>
+    <string name="how_it_works_block_three_description">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</string>
 </resources>
