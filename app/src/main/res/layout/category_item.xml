@@ -3,18 +3,20 @@
     android:layout_width="147dp"
     android:layout_height="210dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/block_background">
+    android:background="@drawable/background_block">
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageView
         android:id="@+id/category_item_image"
+        android:src="@drawable/van_gogh_avatar"
         android:layout_width="148dp"
         android:layout_height="148dp"
-        android:background="@color/grey"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:background="@drawable/corners_rounded_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/corners_rounded_top"
-        app:srcCompat="@drawable/category" />
+        android:contentDescription="@string/error_load_image" />
 
     <TextView
         android:id="@+id/category_item_title"

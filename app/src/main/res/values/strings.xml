@@ -22,15 +22,20 @@
     <string name="trending_collection_name">DSGN Animals</string>
     <string name="trending_collection_author_name">MrFox</string>
 
-    <!-- TOP CREATORS -->
+    <!-- TOP CREATORS-->
     <string name="top_creators_title">Top creators</string>
     <string name="top_creators_description">Checkout Top Rated Creators on the NFT Marketplace.</string>
     <string name="view_rankings_button_text">View Rankings</string>
 
-    <!-- TOP CREATORS ITEM -->
-    <string name="top_creators_item_authors_name">Keepitreal</string>
-    <string name="top_creators_item_total_sales_title">Total Sales:</string>
-    <string name="top_creators_item_total_sales_value">34.53 ETH</string>
+    <!-- TOP CREATORS ITEMS PAGE -->
+    <string name="top_creators_items_page_number">#</string>
+    <string name="top_creators_items_page_name">Artist</string>
+    <string name="top_creators_items_page_amount">Volume</string>
+
+    <!-- TOP CREATORS ITEMS BLOCK -->
+    <string name="top_creators_items_block_authors_name">Keepitreal</string>
+    <string name="top_creators_items_block_total_sales_title">Total Sales:</string>
+    <string name="top_creators_items_block_total_sales_value">34.53 ETH</string>
 
     <!-- CATEGORIES  -->
     <string name="categories_title">Browse Categories</string>
@@ -50,4 +55,8 @@
     <string name="how_it_works_block_two_description">Upload your work and setup your collection. Add a description, social links and floor price.</string>
     <string name="how_it_works_block_three_title">Start Earning</string>
     <string name="how_it_works_block_three_description">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</string>
+
+    <!-- PAINTING ITEM-->
+    <string name="painting_item_price">Price</string>
+    <string name="painting_item_bet">Highest Bid</string>
 </resources>

@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="32">
         <activity
+            android:name=".activity.PaintingActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.RankingsActivity"
             android:exported="false" />
         <activity

@@ -27,10 +27,15 @@
     <string name="top_creators_description">Ознакомьтесь с лучшими создателями на NFT Marketplace.</string>
     <string name="view_rankings_button_text">Посмотреть рейтинг</string>
 
-    <!-- TOP CREATORS ITEM -->
-    <string name="top_creators_item_authors_name">Keepitreal</string>
-    <string name="top_creators_item_total_sales_title">Всего продаж:</string>
-    <string name="top_creators_item_total_sales_value">34.53 ETH</string>
+    <!-- TOP CREATORS ITEMS PAGE -->
+    <string name="top_creators_items_page_number">№</string>
+    <string name="top_creators_items_page_name">Автор</string>
+    <string name="top_creators_items_page_amount">Сумма</string>
+
+    <!-- TOP CREATORS ITEMS BLOCK -->
+    <string name="top_creators_items_block_authors_name">Keepitreal</string>
+    <string name="top_creators_items_block_total_sales_title">Total Sales:</string>
+    <string name="top_creators_items_block_total_sales_value">34.53 ETH</string>
 
     <!-- CATEGORIES  -->
     <string name="categories_title">Категории</string>
@@ -50,4 +55,8 @@
     <string name="how_it_works_block_two_description">Загрузите свои работы и создайте свою коллекцию. Добавьте описание, ссылки на социальные сети и минимальную цену.</string>
     <string name="how_it_works_block_three_title">Начните зарабатывать</string>
     <string name="how_it_works_block_three_description">Выбирайте между аукционами и объявлениями с фиксированной ценой. Начните зарабатывать, продавая свои NFT или торгуя другими.</string>
+
+    <!-- PAINTING ITEM-->
+    <string name="painting_item_price">Цена</string>
+    <string name="painting_item_bet">Высокая ставка</string>
 </resources>
