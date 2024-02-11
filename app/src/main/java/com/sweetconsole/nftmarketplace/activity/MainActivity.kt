@@ -10,7 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.sweetconsole.nftmarketplace.R
 import com.sweetconsole.nftmarketplace.randomNFT
-import com.sweetconsole.nftmarketplace.setTopAuthorsBlockItemsList
+import com.sweetconsole.nftmarketplace.setTopAuthorsItemsList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,12 +22,14 @@ class MainActivity : AppCompatActivity() {
         val introBlockName: TextView = findViewById(R.id.nftName)
         val introBlockAuthorImage: ImageView = findViewById(R.id.nftAuthorAvatar)
         val introBlockAuthorName: TextView = findViewById(R.id.nftAuthorName)
+
         val topAuthorsItemList: RecyclerView = findViewById(R.id.topCreatorsItems)
         val viewRankingsButton: LinearLayout = findViewById(R.id.viewRankingsButton)
+
         val discoverMoreNFTItemList: RecyclerView = findViewById(R.id.discoverMoreNFTItems)
 
         randomNFT(this, introBlockImage, introBlockName, introBlockAuthorImage, introBlockAuthorName)
-        setTopAuthorsBlockItemsList(this, topAuthorsItemList, 5)
+        setTopAuthorsItemsList(this, topAuthorsItemList, 5, "Block")
 
         introBlock.setOnClickListener {
             startActivity(Intent(this, PaintingActivity::class.java))

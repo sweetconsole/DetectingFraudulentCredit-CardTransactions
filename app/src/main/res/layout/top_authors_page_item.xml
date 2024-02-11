@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/topAuthorItemPage"
+    android:id="@+id/topAuthorItem"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginBottom="20dp">
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/topAuthorItemPageRank"
+            android:id="@+id/topAuthorRank"
             android:layout_width="12dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -30,7 +30,7 @@
             android:textSize="12sp" />
 
         <ImageView
-            android:id="@+id/topAuthorItemPageImage"
+            android:id="@+id/topAuthorImage"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="10dp"
@@ -40,7 +40,7 @@
             android:contentDescription="@string/error_load_image" />
 
         <TextView
-            android:id="@+id/topAuthorItemPageName"
+            android:id="@+id/topAuthorName"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -56,7 +56,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/topAuthorItemPageTotalSalesValue"
+            android:id="@+id/topAuthorSales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

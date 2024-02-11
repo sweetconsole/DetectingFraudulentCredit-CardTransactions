@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/topAuthorItemBlock"
+    android:id="@+id/topAuthorItem"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_marginTop="20dp"
@@ -10,7 +10,7 @@
     android:background="@drawable/background_block">
 
     <ImageView
-        android:id="@+id/topAuthorItemBlockImage"
+        android:id="@+id/topAuthorImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/topAuthorItemBlockRank"
+            android:id="@+id/topAuthorRank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/space_mono_regular"
@@ -47,7 +47,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/topAuthorItemBlockName"
+        android:id="@+id/topAuthorName"
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:layout_marginStart="100dp"
@@ -63,11 +63,11 @@
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/topAuthorItemBlockImage"
+        app:layout_constraintStart_toEndOf="@+id/topAuthorImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/topAuthorItemBlockTotalSalesTitle"
+        android:id="@+id/topAuthorItemTotalSalesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -79,11 +79,11 @@
         android:textColor="@color/light_grey"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/topAuthorItemBlockImage"
-        app:layout_constraintTop_toBottomOf="@+id/topAuthorItemBlockName" />
+        app:layout_constraintStart_toEndOf="@+id/topAuthorImage"
+        app:layout_constraintTop_toBottomOf="@+id/topAuthorName" />
 
     <TextView
-        android:id="@+id/topCreatorsItemTotalSalesValue"
+        android:id="@+id/topAuthorSales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -95,7 +95,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/topAuthorItemBlockTotalSalesTitle"
-        app:layout_constraintTop_toBottomOf="@+id/topAuthorItemBlockName" />
+        app:layout_constraintStart_toEndOf="@+id/topAuthorItemTotalSalesTitle"
+        app:layout_constraintTop_toBottomOf="@+id/topAuthorName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

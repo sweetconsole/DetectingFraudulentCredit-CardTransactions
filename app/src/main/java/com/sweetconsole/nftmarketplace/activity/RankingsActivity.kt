@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import com.sweetconsole.nftmarketplace.R
-import com.sweetconsole.nftmarketplace.setTopAuthorsBlockItemsList
-import com.sweetconsole.nftmarketplace.setTopAuthorsPageItemsList
+import com.sweetconsole.nftmarketplace.setTopAuthorsItemsList
 
 class RankingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +13,6 @@ class RankingsActivity : AppCompatActivity() {
 
         val topCreatorsPageItems: RecyclerView = findViewById(R.id.topCreatorsPageItems)
 
-        setTopAuthorsPageItemsList(this, topCreatorsPageItems, 20)
+        setTopAuthorsItemsList(this, topCreatorsPageItems, 20, "Page")
     }
 }

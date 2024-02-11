@@ -1,6 +1,6 @@
 package com.sweetconsole.nftmarketplace.classes
 
-import com.google.firebase.firestore.Exclude
+import kotlin.properties.Delegates
 
 class Painting {
     lateinit var id: String
@@ -8,4 +8,6 @@ class Painting {
     lateinit var description: String
     lateinit var author: String
     lateinit var url: String
+    var price by Delegates.notNull<Int>()
+    var bet by Delegates.notNull<Int>()
 }

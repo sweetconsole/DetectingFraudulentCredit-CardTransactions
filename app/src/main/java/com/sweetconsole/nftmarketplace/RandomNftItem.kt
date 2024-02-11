@@ -1,19 +1,16 @@
 package com.sweetconsole.nftmarketplace
 
-import android.content.Context
-import android.content.Intent
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
 import com.squareup.picasso.Picasso
-import com.sweetconsole.nftmarketplace.activity.PaintingActivity
 import com.sweetconsole.nftmarketplace.classes.Author
 import com.sweetconsole.nftmarketplace.classes.Painting
+import java.util.concurrent.TimeUnit
 
 fun randomNFT (
     activity: AppCompatActivity,
@@ -66,5 +63,8 @@ fun randomNFT (
                     }
                 }
 
+        }
+        .addOnFailureListener {
+            Toast.makeText(activity, "Failed Get Data", Toast.LENGTH_SHORT).show()
         }
 }
