@@ -4,6 +4,7 @@
     <color name="dark_grey">#2B2B2B</color>
     <color name="grey">#3B3B3B</color>
     <color name="light_grey">#858584</color>
+    <color name="faintly_grey">#dbdbdb</color>
     <color name="white">#FFFFFFFF</color>
     <color name="violet">#A259FF</color>
     <color name="red">#FF6250</color>

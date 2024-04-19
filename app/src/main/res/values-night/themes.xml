@@ -1,6 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.NFTMarketplace" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/dark_grey</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="colorOnBackground">@color/dark_grey</item>          <!-- Background -->
+        <item name="colorContainer">@color/grey</item>                  <!-- Container -->
+        <item name="colorPrimary">@color/white</item>                   <!-- Title -->
+        <item name="colorSecondary">@color/white</item>                 <!-- Text -->
+        <item name="colorTertiary">@color/light_grey</item>             <!-- Sub Text -->
+        <item name="colorAccent">@color/violet</item>                   <!-- Accent -->
     </style>
+
+    <style name="Theme.NFTMarketplace" parent="Base.Theme.NFTMarketplace" />
 </resources>

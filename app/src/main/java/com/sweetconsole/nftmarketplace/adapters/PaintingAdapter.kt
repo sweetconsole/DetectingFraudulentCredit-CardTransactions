@@ -70,7 +70,6 @@ class PaintingAdapter (
             }
             .addOnFailureListener {
                 Toast.makeText(context, "Failed Get Data", Toast.LENGTH_SHORT).show()
-                Log.e("ERROR", "Failed Get Data")
             }
 
     }

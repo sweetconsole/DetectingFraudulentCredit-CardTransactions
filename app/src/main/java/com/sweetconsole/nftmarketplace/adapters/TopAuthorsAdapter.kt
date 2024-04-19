@@ -41,7 +41,7 @@ class TopAuthorsAdapter (
                 AuthorHolder(view)
             }
             else -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.top_authors_page_item, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(R.layout.top_authors_block_item, parent, false)
 
                 AuthorHolder(view)
             }
@@ -53,8 +53,8 @@ class TopAuthorsAdapter (
     }
 
     override fun onBindViewHolder(holder: AuthorHolder, position: Int) {
-        val rank: Int = position + 1
-        val sales: String = "${authors[position].sales} ETH"
+        val rank = position + 1
+        val sales = "${authors[position].sales} ETH"
 
         Picasso.get()
             .load(authors[position].photo)
