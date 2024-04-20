@@ -6,64 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:background="@color/dark_grey"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="185dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="16dp"
-                android:contentDescription="@string/error_load_image"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
-
-            <ImageButton
-                android:id="@+id/buttonMenu"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="16dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/error_load_image"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="54dp"
-        android:fillViewport="true"
+        android:layout_marginBottom="60dp"
         android:background="?attr/colorOnBackground"
+        android:fillViewport="true"
         android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/appBarMenu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -78,10 +31,9 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/intro_title"
-                android:textColor="?attr/colorPrimary"
                 android:textSize="24sp"
+                android:theme="@style/block_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -120,14 +72,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="206dp"
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/intro_image"
                     android:background="@drawable/corners_rounded_top"
                     android:clipToOutline="true"
+                    android:contentDescription="@string/error_load_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/intro_image"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:contentDescription="@string/error_load_image" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/nftName"
@@ -135,10 +87,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:background="@color/grey"
                     android:fontFamily="@font/work_sans_semi_bold"
                     android:text="@string/intro_name"
-                    android:textColor="@color/white"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="22sp"
                     app:layout_constraintStart_toStartOf="@+id/introBlock"
                     app:layout_constraintTop_toBottomOf="@+id/nftImage" />
@@ -149,7 +100,6 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@color/grey"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/introBlock"
@@ -160,14 +110,14 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:clipToOutline="true"
-                        android:src="@drawable/van_gogh_avatar"
                         android:background="@drawable/corners_rounded_12dp"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/error_load_image"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/van_gogh_avatar"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/error_load_image" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/nftAuthorName"
@@ -175,10 +125,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="3dp"
-                        android:background="@color/grey"
                         android:fontFamily="@font/work_sans_regular"
                         android:text="@string/intro_author"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/nftAuthorAvatar"
@@ -250,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/space_mono_bold"
                         android:text="@string/intro_total_sale_value"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorPrimary"
                         android:textSize="22sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -263,7 +212,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/work_sans_regular"
                         android:text="@string/intro_total_sale_title"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -282,7 +231,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/space_mono_bold"
                         android:text="@string/intro_auctions_value"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorPrimary"
                         android:textSize="22sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -295,7 +244,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/work_sans_regular"
                         android:text="@string/intro_auctions_title"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -315,7 +264,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/space_mono_bold"
                         android:text="@string/intro_authors_value"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorPrimary"
                         android:textSize="22sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -328,7 +277,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/work_sans_regular"
                         android:text="@string/intro_authors_title"
-                        android:textColor="@color/white"
+                        android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -360,8 +309,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_regular"
                 android:text="@string/trending_collection_description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
+                android:theme="@style/block_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/trendingCollectionTitle" />
@@ -373,15 +321,15 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:scaleType="fitCenter"
-                android:clipToOutline="true"
                 android:background="@drawable/corners_rounded_20dp"
-                android:src="@drawable/trending_collection_one"
+                android:clipToOutline="true"
                 android:contentDescription="@string/error_load_image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/trending_collection_one"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionDescription"/>
+                app:layout_constraintTop_toBottomOf="@+id/trendingCollectionDescription" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout"
@@ -402,8 +350,8 @@
                     android:background="@drawable/corners_rounded_20dp"
                     android:clipToOutline="true"
                     android:contentDescription="@string/error_load_image"
-                    android:src="@drawable/trending_collection_two"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/trending_collection_two"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -415,8 +363,8 @@
                     android:background="@drawable/corners_rounded_20dp"
                     android:clipToOutline="true"
                     android:contentDescription="@string/error_load_image"
-                    android:src="@drawable/trending_collection_three"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/trending_collection_three"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/trendingCollectionButton"
                     app:layout_constraintStart_toEndOf="@+id/trendingCollectionImageTwo"
@@ -427,11 +375,11 @@
                     android:layout_width="95dp"
                     android:layout_height="95dp"
                     android:layout_gravity="end"
+                    android:background="@drawable/background_button"
                     android:fontFamily="@font/space_mono_bold"
                     android:text="@string/trending_collection_count"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:background="@drawable/background_button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -446,7 +394,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/trending_collection_name"
-                android:textColor="@color/white"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -467,13 +415,13 @@
                     android:id="@+id/trendingCollectionAuthorAvatar"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:clipToOutline="true"
                     android:background="@drawable/corners_rounded_12dp"
+                    android:clipToOutline="true"
+                    android:contentDescription="@string/error_load_image"
                     android:src="@drawable/van_gogh_avatar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:contentDescription="@string/error_load_image" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/trendingCollectionAuthorName"
@@ -482,7 +430,7 @@
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/work_sans_regular"
                     android:text="@string/trending_collection_author_name"
-                    android:textColor="@color/white"
+                    android:textColor="?attr/colorSecondary"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/trendingCollectionAuthorAvatar"
@@ -499,8 +447,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/top_creators_title"
-                android:textColor="@color/white"
-                android:textSize="28sp"
+                android:theme="@style/block_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
@@ -547,8 +494,8 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:contentDescription="@string/error_load_image"
-                    android:src="@drawable/rocket_icon_violet"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/rocket_icon_violet"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -561,7 +508,7 @@
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/work_sans_semi_bold"
                     android:text="@string/view_rankings_button_text"
-                    android:textColor="@color/white"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -570,7 +517,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/categoriesTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -578,8 +525,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/categories_title"
-                android:textColor="@color/white"
-                android:textSize="28sp"
+                android:theme="@style/block_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/viewRankingsButton" />
@@ -595,7 +541,7 @@
                 android:verticalSpacing="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/categoriesTitle" />
 
             <TextView
                 android:id="@+id/discoverMoreNFTTitle"
@@ -606,8 +552,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_semi_bold"
                 android:text="@string/discover_more_nft_title"
-                android:textColor="@color/white"
-                android:textSize="24sp"
+                android:theme="@style/block_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/categoriesItems" />
@@ -621,8 +566,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/work_sans_regular"
                 android:text="@string/discover_more_nft_description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
+                android:theme="@style/block_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/discoverMoreNFTTitle" />
@@ -669,7 +613,7 @@
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/work_sans_semi_bold"
                     android:text="@string/discover_more_nft_button_text"
-                    android:textColor="@color/white"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -880,6 +824,76 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <!-- ***************************************************** -->
+    <!-- ******************** MENU *************************** -->
+    <!-- ***************************************************** -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingVertical="16dp"
+        android:background="?attr/colorContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="PrivateResource">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/MenuHome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/home"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuMarketplace"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/marketplace"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuRank"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/rank"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuProfile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/profile"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

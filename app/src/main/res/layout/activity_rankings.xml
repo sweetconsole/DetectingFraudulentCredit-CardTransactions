@@ -6,64 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".activity.RankingsActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayoutRankings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:background="@color/dark_grey"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="185dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="16dp"
-                android:contentDescription="@string/error_load_image"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
-
-            <ImageButton
-                android:id="@+id/buttonMenu"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="16dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/error_load_image"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="54dp"
+        android:layout_marginBottom="60dp"
+        android:background="?attr/colorOnBackground"
         android:fillViewport="true"
-        android:background="@color/dark_grey"
         android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/appBarMenu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayoutRankings">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -102,8 +55,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="30dp"
-                android:paddingHorizontal="15dp"
                 android:background="@drawable/background_top_creators_items_page_values"
+                android:paddingHorizontal="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3">
@@ -154,6 +107,76 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <!-- ***************************************************** -->
+    <!-- ******************** MENU *************************** -->
+    <!-- ***************************************************** -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingVertical="16dp"
+        android:background="?attr/colorContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="PrivateResource">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/MenuHome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/home"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuMarketplace"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/marketplace"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuRank"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/rank"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+
+            <ImageButton
+                android:id="@+id/MenuProfile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorContainer"
+                app:srcCompat="@drawable/profile"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="@string/error_load_image" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
 

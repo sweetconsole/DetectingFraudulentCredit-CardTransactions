@@ -2,6 +2,7 @@ package com.sweetconsole.nftmarketplace.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -28,6 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         val discoverMoreNFTItemList: RecyclerView = findViewById(R.id.discoverMoreNFTItems)
 
+        // App Bar Menu
+        val buttonMenuRankings: ImageButton = findViewById(R.id.MenuRank)
+
         randomNFT(this, introBlockImage, introBlockName, introBlockAuthorImage, introBlockAuthorName)
         setTopAuthorsItemsList(this, topAuthorsItemList, 5, "Block")
 
@@ -36,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         viewRankingsButton.setOnClickListener {
+            startActivity(Intent(this, RankingsActivity::class.java))
+        }
+
+        buttonMenuRankings.setOnClickListener {
             startActivity(Intent(this, RankingsActivity::class.java))
         }
     }

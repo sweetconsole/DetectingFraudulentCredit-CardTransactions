@@ -52,7 +52,7 @@
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/work_sans_regular"
             android:text="Шишкин Иван Иванович"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorPrimary"
             android:textSize="16sp" />
 
         <TextView
@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/space_mono_regular"
             android:text="12.4 ETH"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorSecondary"
             android:textSize="12sp" />
 
     </LinearLayout>

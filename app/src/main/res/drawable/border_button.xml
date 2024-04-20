@@ -6,7 +6,7 @@
                 android:width="2dp"
                 android:color="@color/violet"/>
             <corners android:radius="20dp" />
-            <solid android:color="@color/dark_grey" />
+            <solid android:color="?attr/colorOnBackground" />
         </shape>
     </item>
 </selector>
